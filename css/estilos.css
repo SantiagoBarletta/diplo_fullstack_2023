@@ -1,4 +1,4 @@
-.contenedor {
+body {
 	width:auto;
 	margin:0px auto;
 	font-size:1em;
@@ -10,14 +10,17 @@
 	padding:0.2%;
 	background:#04273C;
   }
+  
  section,aside {
 	margin-top: 5px;
 	padding: 10px;
-	-moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
+	
   }
   section {
 	border: 1px solid #ccc;
 	margin-bottom: 50px;
+	float: left;
+	width: 85%;
   }
   aside {
 	position: inherit;
