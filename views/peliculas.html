@@ -3,21 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/estilos.css" rel="stylesheet" />
     <title>Peliculas</title>
   </head>
   <body>
-    <h1>Peliculas</h1>
-    <h2>Viernes 13</h2>
-    <img src="./images/f13.jpg" alt="Viernes 13" width="200px" />
-    <h3>Trailer</h3>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/NrNCwFG8Yrw?si=i_1R0pLcDPBdo51x"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <header id="cabecera" class="encabezado">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="peliculas.html">Peliculas</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contenido">
+      <h1 class="titulo">Películas</h1>
+      <article>
+        <h2 class="tituloPelicula">Viernes 13</h2>
+        <img src="./../images/f13.jpg" alt="Viernes 13" class="poster" />
+        <div class="sinopsis">
+          El campamento de verano de Crystal Lake reabre sus puertas tras
+          permanecer varios años cerrado a raíz de un accidente. A partir de ese
+          momento, comienza a aparecer gente muerta en extrañas circunstancias.
+        </div>
+        <h3>Trailer</h3>
+        <iframe
+          width="560"
+          src="https://www.youtube.com/embed/NrNCwFG8Yrw?si=i_1R0pLcDPBdo51x"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article>
+        <h2 class="tituloPelicula">El regreso de los muertos vivos</h2>
+        <img
+          src="./../images/trotld.jpg"
+          alt="El regreso de los muertos vivos"
+          class="poster"
+        />
+        <div class="sinopsis">
+          En su primer día en un almacén de suministros médicos, Freddy (Thom
+          Mathews) libera, sin querer, gas tóxico de un barco militar secreto de
+          EE. UU. El gas reanima a un ejército de cadáveres con un hambre voraz
+          ¡por cerebros humanos!
+        </div>
+        <h3>Trailer</h3>
+        <iframe
+          src="https://www.youtube.com/embed/KeSAFGWzft8?si=4uWVcPS8EjPlv_fs"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article>
+        <h2 class="tituloPelicula">La Cosa</h2>
+        <img src="./../images/tt.jpg" alt="La cosa poster" class="poster" />
+        <div class="datosPelicula"><div class="sinopsis">
+          Un equipo científico de la Antártida descubre un ente extraño que
+          podría ser letal para la humanidad, un extraterrestre que puede
+          duplicar otras formas de vida.
+        </div>
+      </div>
+        <h3>Trailer</h3>
+        <iframe
+          src="https://www.youtube.com/embed/5ftmr17M-a4?si=eqBoX-xEoXdlg-uU"
+          title="Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </article>
+    </section>
+    <aside class="recomendaciones">
+      <h2>Recomendados</h2>
+      <ul>
+        <li>It</li>
+        <li>Cementerio de Animales</li>
+        <li>Pesadilla en calle elm</li>
+        <li>Halloween</li>
+      </ul>
+    </aside>
+    <footer>Pie de página</footer>
   </body>
 </html>
