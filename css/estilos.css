@@ -7,32 +7,27 @@
 body {
   width: auto;
   margin: 0px auto;
-  font-size: 1em;
   font-size: 15px;
   font-family: helvetica;
 }
+
 nav {
 	width: 100%;
 	height: 70px;
 	text-align: center;
 }
 nav ul {
-	margin: 0;
-	padding: 0;
+	display: flex;
 	list-style-type: none;
-}
-nav ul li {
-  display: inline;
+  justify-content: center;
 }
 
 nav ul li a {
 	display: inline-block;
 	color:#333;
 	text-decoration:none;
-	text-align: center;
 	border-right:1px dotted #CCC;
 	width: 187px;
-	height: 70px;
 	line-height: 70px;
 	}
 nav ul li a:hover {
@@ -76,6 +71,7 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
+
 h1 {
   color: #04273c;
 }
@@ -87,7 +83,7 @@ h3 {
 }
 article {
   display: inline-block;
-  width: 32%;
+  width: 420px;
   height: 600px;
   border-radius: 1rem;
   border-left: 10px solid #04273c;
@@ -156,6 +152,13 @@ height: 50%;
 }
 
 .imagenIndex img{
-  width: 100%;
-  
+  width: 100%; 
+}
+
+.contenido{
+  display: flex;
+  flex-wrap: wrap;
+}
+#cabecera{
+  display: flex;
 }
