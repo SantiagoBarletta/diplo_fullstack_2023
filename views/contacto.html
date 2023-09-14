@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/estilos.css" rel="stylesheet" />
+    <title>Contacto HTML</title>
+</head>
+
+<body>
+    <header id="cabecera" class="encabezado">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="peliculas.html">Peliculas</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Comentario HTML-->
+    <div class="imagenIndex"><img src="../images/background.jpg" /></div>
+    <section>
+        <div class="formularioContacto">
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Formulario de Contacto</legend>
+                    <div><label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required maxlength="15" minlength="2" />
+                    </div>
+                    <div><label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" required />
+                    </div>
+                    <div><label for="fechaNacimiento">Fecha Nacimiento</label>
+                        <input type="date" name="fechaNacimiento" id="fechaNacimiento" />
+                    </div>
+                    <div><label for="clave">Contraseña</label>
+                        <input type="password" name="clave" id="clave" required
+                            pattern="/(?=.*[1-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@\!\#\$\%\\\&/\(\)\?\|]).{5,15}\" />
+                    </div>
+                    <div><label for="correo">Correo Electrónico</label>
+                        <input type="email" name="correo" id="correo" />
+                    </div>
+                    <div> <label for="talle">Talle</label>
+                        <select name="talle" id="talle">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                        </select>
+                    </div>
+                    <div><label for="cantidad">Cantidad</label>
+                        <input type="number" name="cantidad" id="cantidad" required min="1" max="5" />
+                        <div><label for="pais">País de residencia</label>
+                            <input type="radio" name="pais" value="Argentina" /> Argentina
+                            <input type="radio" name="pais" value="Brasil" /> Brasil
+                            <input type="radio" name="pais" value="Chile" /> Chile
+                        </div>
+                        <div><label for="acepta">Acepta terminos y condiciones</label>
+                            <input type="checkbox" name="cbox" value="1" required>
+                            <div><label for=""><input type="checkbox" name="cbox" id="cbox1">Este es mi primer
+                                    checkbox</label></div>
+                            <div><label for=""><input type="checkbox" name="cbox" id="cbox2">Este es mi segundo
+                                    checkbox</label></div>
+                            <div> <input type="submit" value="Enviar formulario"></div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <aside class="recomendaciones">
+        <h2>Recomendados</h2>
+        <ul>
+            <li>Scream</li>
+            <li>Cementerio de Animales</li>
+            <li>Pesadilla en calle elm</li>
+            <li>Halloween</li>
+        </ul>
+    </aside>
+    <footer>Desarrollado por Santiago Barletta</footer>
+</body>
+
+</html>
