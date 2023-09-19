@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../css/estilos.css" rel="stylesheet" />
-    <title>Personajes Grid</title>
-  </head>
-  <body>
-    <header id="cabecera" class="encabezado">
-      <nav class="navbar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../css/estilos.css" rel="stylesheet" />
+  <title>Personajes Grid</title>
+</head>
+
+<body>
+  <div id="grid">
+    <header id="cabeceraPersonajes" class="encabezado">
+      <nav class="navbarPersonajes">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="peliculas.html">Peliculas</a></li>
@@ -18,14 +21,56 @@
         </ul>
       </nav>
     </header>
-    <div class="imagenIndex">
+    <div id="imagenPersonajes">
       <img src="../images/background.jpg" />
-      <p class="tituloPagina">PLANETA TERROR</p>
-  </div>
-    <section>
+      <p class="tituloPaginaPersonajes">PLANETA TERROR</p>
+    </div>
+    <section id="contenidoPersonajes">
       <h1>Personajes</h1>
+      <article class="personaje">
+        <h2 class="tituloPelicula">Jason Voorhees</h2>
+        <img src="./../images/jason.jpg" alt="Jason Voorhees" class="bioImg" />
+        <div class="sinopsis">
+          Jason Voorhees es el personaje principal de la serie de películas Viernes 13. Es un psicópata asesino serial
+          que mata a la gente por puro gusto. A partir de la tercera película lleva puesta una máscara de portero de
+          hockey para ocultar su rostro y tiene un machete como arma principal para cometer sus crímenes.
+        </div>
+      </article>
+      <article class="personaje">
+        <h2 class="tituloPelicula">Tarman</h2>
+        <img src="./../images/tarman.jpg" alt="Tarman" class="bioImg" />
+        <div class="sinopsis">
+          Tarman es uno de los zombies originales en los que basaron la pelicula La Noche de los Muertos Vivientes. Es
+          transportado a un laboratorio,pero por error, es llevado a un almacen. Alli, un
+          empleado abre su contenedor, devolviendole la vida, y expandiendo el gas que hace que los muertos revivan.
+        </div>
+
+
+      </article>
+      <article class="personaje">
+        <h2 class="tituloPelicula">La Cosa</h2>
+        <img src="./../images/thing.jpg" alt="La cosa" class="bioImg" />
+        <div class="datosPelicula">
+          <div class="sinopsis">
+            Se trataría de un experimento creado por seres de Marte, pero se salio de control y empezó a devorar cada
+            ser y transformarse en el para continuar su ciclo. Ningún arma lo puede matar, siendo lo único a lo que es
+            vulnerable el fuego y las altas temperaturas.
+          </div>
+
+      </article>
+      <article class="personaje">
+        <h2 class="tituloPelicula">Pennywise</h2>
+        <img src="./../images/pennywise.png" alt="Pennywise" class="bioImg" />
+        <div class="datosPelicula">
+          <div class="sinopsis">
+            Pennywise es una criatura cósmica que cayó a la Tierra hace miles de años. Hiberna cada 27 años, y
+            despierta para alimentarse de los pobladores de Derry, en especial de niños. It es tan viejo como la
+            Tierra misma. Tiene millones de años de existencia.
+          </div>
+
+      </article>
     </section>
-    <aside class="recomendaciones">
+    <aside id="asidePersonajes">
       <h2>Recomendados</h2>
       <ul>
         <li>Scream</li>
@@ -34,6 +79,8 @@
         <li>Halloween</li>
       </ul>
     </aside>
-    <footer>Pie de página</footer>
-  </body>
+    <footer id="footerPersonajes">Desarrollado por Santiago Barletta</footer>
+  </div>
+</body>
+
 </html>
