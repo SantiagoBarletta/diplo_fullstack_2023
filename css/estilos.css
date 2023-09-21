@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* MOBILE FIRST*/
 body {
   width: auto;
   margin: 0px auto;
@@ -11,298 +11,594 @@ body {
   font-family: helvetica;
 }
 
-.navbar,
-.navbarPersonajes {
-  width: 100%;
-  height: 70px;
-  text-align: center;
-}
-.navbar ul,
-.navbarPersonajes ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-}
 
-.navbar ul li a ,
-.navbarPersonajes ul li a{
-  display: inline-block;
-  color: #333;
-  text-decoration: none;
-  border-right: 1px dotted #ccc;
-  width: 187px;
-  line-height: 70px;
-}
-.navbar ul li a:hover,
-.navbarPersonajes ul li a:hover {
-  background-color: #0e4791;
-  color: #ccc;
-}
-section,
-aside {
-  margin-right: 5px;
-  margin-top: 5px;
-  padding: 10px;
-}
-.contenidoPeliculas,
-.contenidoIndex,
-.contenidoContato {
-  border: 1px solid #ccc;
-  margin-bottom: 50px;
-  float: left;
-  width: 85%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.recomendaciones {
-  position: inherit;
-  float: right;
-  background: #ccc;
-  color: #333;
-  right: 0;
-  bottom: 0;
-  width: 14%;
-}
+/*Patalla de tablets*/
+@media screen and (min-width: 576px) {
+  .navbar,
+  .navbarPersonajes {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+  }
+  .navbar ul,
+  .navbarPersonajes ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
 
-.footerIndex,
-.footerPeliculas,
-.footerContacto {
-  position: fixed;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 10px 0px 10px 0px;
-  background-color: #04273c;
-  text-align: center;
-  color: #fff;
-}
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
+  .navbar ul li a,
+  .navbarPersonajes ul li a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    border-right: 1px dotted #ccc;
+    width: 187px;
+    line-height: 70px;
+  }
+  .navbar ul li a:hover,
+  .navbarPersonajes ul li a:hover {
+    background-color: #0e4791;
+    color: #ccc;
+  }
+  section,
+  aside {
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  .contenidoPeliculas,
+  .contenidoIndex,
+  .contenidoContato {
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    float: left;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recomendaciones {
+    position: inherit;
+    float: right;
+    background: #ccc;
+    color: #333;
+    right: 0;
+    bottom: 0;
+    width: 14%;
+  }
 
-h1 {
-  color: #04273c;
-}
+  .footerIndex,
+  .footerPeliculas,
+  .footerContacto {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0px 10px 0px;
+    background-color: #04273c;
+    text-align: center;
+    color: #fff;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
 
-h1,
-h2,
-h3 {
-  padding: 1rem;
-}
-.pelicula {
-  display: inline-block;
-  width: 420px;
-  height: 600px;
-  border-radius: 1rem;
-  border-left: 10px solid #04273c;
-  box-shadow: 3px 10px 10px #999;
-  margin: 0.2rem;
-}
-.personaje {
-  display: inline-block;
-  width: 420px;
-  border-radius: 1rem;
-  border-left: 10px solid #04273c;
-  box-shadow: 3px 10px 10px #999;
-  margin: 0.2rem;
-}
-.poster {
-  width: 40%;
-  padding: 1rem;
-  float: left;
-}
+  h1 {
+    color: #04273c;
+  }
 
-.bioImg {
-  max-width: 40%;
-  overflow: hidden;
-  padding: 1rem;
-  float: left;
-}
+  h1,
+  h2,
+  h3 {
+    padding: 1rem;
+  }
+  .pelicula {
+    display: inline-block;
+    width: 420px;
+    height: 600px;
+    border-radius: 1rem;
+    border-left: 10px solid #04273c;
+    box-shadow: 3px 10px 10px #999;
+    margin: 0.2rem;
+  }
+  .personaje {
+    display: inline-block;
+    width: 420px;
+    border-radius: 1rem;
+    border-left: 10px solid #04273c;
+    box-shadow: 3px 10px 10px #999;
+    margin: 0.2rem;
+  }
+  .poster {
+    width: 40%;
+    padding: 1rem;
+    float: left;
+  }
 
+  .bioImg {
+    max-width: 40%;
+    overflow: hidden;
+    padding: 1rem;
+    float: left;
+  }
 
+  .sinopsis {
+    display: inline;
+    float: right;
+    width: 60%;
+    padding: 1rem;
+  }
+  iframe {
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+  }
 
-.sinopsis {
-  display: inline;
-  float: right;
-  width: 60%;
-  padding: 1rem;
-}
-iframe {
-  width: 100%;
-  height: 80%;
-  padding: 1rem;
-}
+  .tituloPelicula {
+    background-color: #04273c;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 0 1rem 0 0;
+  }
 
-.tituloPelicula {
-  background-color: #04273c;
-  color: #fff;
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 0 1rem 0 0;
-}
+  .recomendaciones {
+    display: inline-block;
+    border-radius: 1rem;
+    border-left: 10px solid #04273c;
+    box-shadow: 3px 10px 10px #999;
+  }
+  .recomendaciones li {
+    margin-left: 10px;
+  }
+  .datosPelicula {
+    display: inline;
+  }
 
-.recomendaciones {
-  display: inline-block;
-  border-radius: 1rem;
-  border-left: 10px solid #04273c;
-  box-shadow: 3px 10px 10px #999;
-}
-.recomendaciones li {
-  margin-left: 10px;
-}
-.datosPelicula {
-  display: inline;
-}
+  .trailer {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+  }
 
-.trailer {
-  display: inline-block;
-  width: 100%;
-  height: 50%;
-}
+  .cabezaTrailer {
+    background-color: #04273c;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
 
-.cabezaTrailer {
-  background-color: #04273c;
-  color: #fff;
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-}
+  .imagenIndex {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
+    z-index: 0;
+  }
 
-.imagenIndex {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  margin: 0;
-  z-index: 0;
-}
+  /*Titulo*/
+  .tituloPagina {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  .tituloPaginaPersonajes {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+  }
 
-/*Titulo*/
-.tituloPagina {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  color: #fff;
-  font-size: 60px;
-  font-weight: bolder;
-}
-.tituloPaginaPersonajes {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  color: #fff;
-  font-size: 60px;
-  font-weight: bolder;
-}
+  .imagenIndex img {
+    width: 100%;
+  }
 
+  #cabecera {
+    display: flex;
+  }
 
-.imagenIndex img {
-  width: 100%;
-}
+  /*FORMULARIO*/
+  .formulario {
+    font-size: 1rem;
+  }
+  fieldset {
+    padding: 10px;
+  }
+  input,
+  select label {
+    margin: 5px;
+    border: 1px;
+    font-size: 16px;
+    height: auto;
+    padding: 5px;
+    box-shadow: 0 1px 1px gray inset;
+    border-radius: 8px;
+    max-width: 200px;
+  }
 
-#cabecera {
-  display: flex;
-}
+  input:invalid {
+    box-shadow: 0 0 5px red;
+  }
+  input:focus {
+    box-shadow: none;
+  }
 
-/*FORMULARIO*/
-.formulario {
-  font-size: 1rem;
-}
-fieldset {
-  padding: 10px;
-}
-input,
-select label {
-  margin: 5px;
-  border: 1px;
-  font-size: 16px;
-  height: auto;
-  padding: 5px;
-  box-shadow: 0 1px 1px gray inset;
-  border-radius: 8px;
-  max-width: 200px;
-}
+  input[type="submit"] {
+    font-size: 1rem;
+    padding: 5px;
+    color: #fff;
+    background: #04273c;
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px;
+  }
+  legend {
+    margin: 10px;
+  }
+  /*Menu*/
+  .navbar {
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+  }
 
-input:invalid {
-  box-shadow: 0 0 5px red;
-}
-input:focus {
-  box-shadow: none;
-}
+  /*GRID*/
+  #grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "imagen imagen imagen"
+      "contenido aside aside"
+      "footer footer footer";
 
-input[type="submit"] {
-  font-size: 1rem;
-  padding: 5px;
-  color: #fff;
-  background: #04273c;
-  border-radius: 8px;
-  width: 200px;
-  padding: 10px;
-}
-legend {
-  margin: 10px;
-}
-/*Menu*/
-.navbar {
-  position: fixed;
-  background-color: #fff;
-  z-index: 1;
-}
+    grid-template-rows: 70px 400px 3fr;
+  }
 
-/*GRID*/
-#grid {
-  display: grid;
-  grid-template-areas: 
-  "header header header"
-  "imagen imagen imagen"
-  "contenido aside aside"
-  "footer footer footer";
+  header#cabeceraPersonajes {
+    grid-area: header;
+    position: sticky;
+  }
 
-  grid-template-rows: 70px 400px 3fr;
+  div#imagenPersonajes {
+    grid-area: imagen;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
+    z-index: 0;
+  }
+
+  section#contenidoPersonajes {
+    grid-area: contenido;
+    margin-bottom: 50px;
+  }
+
+  aside#asidePersonajes {
+    grid-area: aside;
+    background: #ccc;
+    color: #333;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    border-left: 10px solid #04273c;
+    box-shadow: 3px 10px 10px #999;
+  }
+
+  footer#footerPersonajes {
+    grid-area: footer;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0px 10px 0px;
+    background-color: #04273c;
+    text-align: center;
+    color: #fff;
+  }
 }
+/* Pantallas de escritorio*/
+@media screen and (min-width: 992px) {
+  .navbar,
+  .navbarPersonajes {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+  }
+  .navbar ul,
+  .navbarPersonajes ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
 
-header#cabeceraPersonajes {
-  grid-area: header;
-  position:sticky;
-}
+  .navbar ul li a,
+  .navbarPersonajes ul li a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    border-right: 1px dotted #ccc;
+    width: 187px;
+    line-height: 70px;
+  }
+  .navbar ul li a:hover,
+  .navbarPersonajes ul li a:hover {
+    background-color: #0e4791;
+    color: #ccc;
+  }
+  section,
+  aside {
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  .contenidoPeliculas,
+  .contenidoIndex,
+  .contenidoContato {
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    float: left;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recomendaciones {
+    position: inherit;
+    float: right;
+    background: #ccc;
+    color: #333;
+    right: 0;
+    bottom: 0;
+    width: 14%;
+  }
 
-div#imagenPersonajes {
-  grid-area: imagen;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  margin: 0;
-  z-index: 0;
-}
+  .footerIndex,
+  .footerPeliculas,
+  .footerContacto {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0px 10px 0px;
+    background-color: #04273c;
+    text-align: center;
+    color: #fff;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
 
-section#contenidoPersonajes {
-  grid-area: contenido;
-  margin-bottom: 50px;
-}
+  h1 {
+    color: #04273c;
+  }
 
-aside#asidePersonajes {
-  grid-area: aside;
-  background: #ccc;
-  color: #333;
-  right: 0;
-  bottom: 0;
-  border-radius: 1rem;
-  border-left: 10px solid #04273c;
-  box-shadow: 3px 10px 10px #999;
-}
+  h1,
+  h2,
+  h3 {
+    padding: 1rem;
+  }
+  .pelicula {
+    display: inline-block;
+    width: 420px;
+    height: 600px;
+    border-radius: 1rem;
+    border-left: 10px solid #04273c;
+    box-shadow: 3px 10px 10px #999;
+    margin: 0.2rem;
+  }
+  .personaje {
+    display: inline-block;
+    width: 420px;
+    border-radius: 1rem;
+    border-left: 10px solid #04273c;
+    box-shadow: 3px 10px 10px #999;
+    margin: 0.2rem;
+  }
+  .poster {
+    width: 40%;
+    padding: 1rem;
+    float: left;
+  }
 
-footer#footerPersonajes {
-  grid-area: footer;
-  position: fixed;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 10px 0px 10px 0px;
-  background-color: #04273c;
-  text-align: center;
-  color: #fff;
+  .bioImg {
+    max-width: 40%;
+    overflow: hidden;
+    padding: 1rem;
+    float: left;
+  }
+
+  .sinopsis {
+    display: inline;
+    float: right;
+    width: 60%;
+    padding: 1rem;
+  }
+  iframe {
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+  }
+
+  .tituloPelicula {
+    background-color: #04273c;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 0 1rem 0 0;
+  }
+
+  .recomendaciones {
+    display: inline-block;
+    border-radius: 1rem;
+    border-left: 10px solid #04273c;
+    box-shadow: 3px 10px 10px #999;
+  }
+  .recomendaciones li {
+    margin-left: 10px;
+  }
+  .datosPelicula {
+    display: inline;
+  }
+
+  .trailer {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+  }
+
+  .cabezaTrailer {
+    background-color: #04273c;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .imagenIndex {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
+    z-index: 0;
+  }
+
+  /*Titulo*/
+  .tituloPagina {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  .tituloPaginaPersonajes {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+
+  .imagenIndex img {
+    width: 100%;
+  }
+
+  #cabecera {
+    display: flex;
+  }
+
+  /*FORMULARIO*/
+  .formulario {
+    font-size: 1rem;
+  }
+  fieldset {
+    padding: 10px;
+  }
+  input,
+  select label {
+    margin: 5px;
+    border: 1px;
+    font-size: 16px;
+    height: auto;
+    padding: 5px;
+    box-shadow: 0 1px 1px gray inset;
+    border-radius: 8px;
+    max-width: 200px;
+  }
+
+  input:invalid {
+    box-shadow: 0 0 5px red;
+  }
+  input:focus {
+    box-shadow: none;
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+    padding: 5px;
+    color: #fff;
+    background: #04273c;
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px;
+  }
+  legend {
+    margin: 10px;
+  }
+  /*Menu*/
+  .navbar {
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  /*GRID*/
+  #grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "imagen imagen imagen"
+      "contenido aside aside"
+      "footer footer footer";
+
+    grid-template-rows: 70px 400px 3fr;
+  }
+
+  header#cabeceraPersonajes {
+    grid-area: header;
+    position: sticky;
+  }
+
+  div#imagenPersonajes {
+    grid-area: imagen;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
+    z-index: 0;
+  }
+
+  section#contenidoPersonajes {
+    grid-area: contenido;
+    margin-bottom: 50px;
+  }
+
+  aside#asidePersonajes {
+    grid-area: aside;
+    background: #ccc;
+    color: #333;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    border-left: 10px solid #04273c;
+    box-shadow: 3px 10px 10px #999;
+  }
+
+  footer#footerPersonajes {
+    grid-area: footer;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0px 10px 0px;
+    background-color: #04273c;
+    text-align: center;
+    color: #fff;
+  }
 }
