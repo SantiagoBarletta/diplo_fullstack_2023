@@ -4,12 +4,43 @@
   box-sizing: border-box;
 }
 /* MOBILE FIRST*/
+
 body {
   width: auto;
   margin: 0px auto;
   font-size: 15px;
   font-family: helvetica;
 }
+.navbar,
+.navbarPersonajes {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.navbar ul,
+.navbarPersonajes ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.navbar ul li a,
+.navbarPersonajes ul li a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  border-right: 1px dotted #ccc;
+  width: 100px;
+  line-height: 50px;
+}
+.navbar ul li a:hover,
+.navbarPersonajes ul li a:hover {
+  background-color: #0e4791;
+  color: #ccc;
+}
+
 .footerIndex,
 .footerPeliculas,
 .footerContacto {
@@ -144,36 +175,74 @@ iframe {
   font-size: 15px;
   font-weight: bold;
 }
+ /*FORMULARIO*/
+ .formulario {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+fieldset {
+  padding: 10px;
+}
+input,
+select label {
+  margin: 5px;
+  border: 1px;
+  font-size: 16px;
+  height: auto;
+  padding: 5px;
+  box-shadow: 0 1px 1px gray inset;
+  border-radius: 8px;
+  max-width: 200px;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px red;
+}
+input:focus {
+  box-shadow: none;
+}
+
+input[type="submit"] {
+  font-size: 1rem;
+  padding: 5px;
+  color: #fff;
+  background: #04273c;
+  border-radius: 8px;
+  width: 200px;
+  padding: 10px;
+}
+legend {
+  margin: 10px;
+}
+
+.recomendaciones {
+  background: #ccc;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+.recomendaciones {
+  display: inline-block;
+  border-radius: 1rem;
+  border-left: 10px solid #04273c;
+  box-shadow: 3px 10px 10px #999;
+}
+.recomendaciones li {
+  margin-left: 10px;
+}
+
 /*------------------------------------------Patalla de tablets---------------------------------------------*/
 @media screen and (min-width: 576px) {
   .navbar,
   .navbarPersonajes {
-    width: 100%;
     height: 70px;
-    text-align: center;
   }
-  .navbar ul,
-  .navbarPersonajes ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-  }
-
   .navbar ul li a,
   .navbarPersonajes ul li a {
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    border-right: 1px dotted #ccc;
     width: 120px;
     line-height: 70px;
   }
-  .navbar ul li a:hover,
-  .navbarPersonajes ul li a:hover {
-    background-color: #0e4791;
-    color: #ccc;
-  }
-
   .imagenIndex {
     height: 400px;
   }
@@ -195,20 +264,9 @@ iframe {
     flex-wrap: wrap;
   }
   .recomendaciones {
-    position: inherit;
-    float: right;
-    background: #ccc;
-    color: #333;
-    right: 0;
-    bottom: 0;
-    width: 28%;
+       width: 28%;
   }
-  .recomendaciones {
-    display: inline-block;
-    border-radius: 1rem;
-    border-left: 10px solid #04273c;
-    box-shadow: 3px 10px 10px #999;
-  }
+  
   .recomendaciones li {
     margin-left: 10px;
   }
@@ -224,53 +282,8 @@ iframe {
     font-size: 60px;
     font-weight: bolder;
   }
-
   .pelicula {
     height: 750px;   
-  }
-  /*FORMULARIO*/
-  .formulario {
-    font-size: 1rem;
-  }
-  fieldset {
-    padding: 10px;
-  }
-  input,
-  select label {
-    margin: 5px;
-    border: 1px;
-    font-size: 16px;
-    height: auto;
-    padding: 5px;
-    box-shadow: 0 1px 1px gray inset;
-    border-radius: 8px;
-    max-width: 200px;
-  }
-
-  input:invalid {
-    box-shadow: 0 0 5px red;
-  }
-  input:focus {
-    box-shadow: none;
-  }
-
-  input[type="submit"] {
-    font-size: 1rem;
-    padding: 5px;
-    color: #fff;
-    background: #04273c;
-    border-radius: 8px;
-    width: 200px;
-    padding: 10px;
-  }
-  legend {
-    margin: 10px;
-  }
-  /*Menu*/
-  .navbar {
-    position: fixed;
-    background-color: #fff;
-    z-index: 1;
   }
 
   /*GRID*/
@@ -339,6 +352,7 @@ iframe {
   .contenidoContato {
     width: 82%;
   }
+
   .recomendaciones {
        width: 17%;
   }
@@ -361,98 +375,4 @@ iframe {
     max-width: 375px;
     height: 350px;
   }
-  
-  /*FORMULARIO*/
-  .formulario {
-    font-size: 1rem;
-  }
-  fieldset {
-    padding: 10px;
-  }
-  input,
-  select label {
-    margin: 5px;
-    border: 1px;
-    font-size: 16px;
-    height: auto;
-    padding: 5px;
-    box-shadow: 0 1px 1px gray inset;
-    border-radius: 8px;
-    max-width: 200px;
-  }
-
-  input:invalid {
-    box-shadow: 0 0 5px red;
-  }
-  input:focus {
-    box-shadow: none;
-  }
-
-  input[type="submit"] {
-    font-size: 1rem;
-    padding: 5px;
-    color: #fff;
-    background: #04273c;
-    border-radius: 8px;
-    width: 200px;
-    padding: 10px;
-  }
-  legend {
-    margin: 10px;
-  }
-  /*GRID*/
-  #grid {
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "imagen imagen imagen"
-      "contenido aside aside"
-      "footer footer footer";
-
-    grid-template-rows: 70px 400px 3fr;
-  }
-
-  header#cabeceraPersonajes {
-    grid-area: header;
-    position: sticky;
-  }
-
-  div#imagenPersonajes {
-    grid-area: imagen;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    margin: 0;
-    z-index: 0;
-  }
-
-  section#contenidoPersonajes {
-    grid-area: contenido;
-    margin-bottom: 50px;
-  }
-
-  aside#asidePersonajes {
-    grid-area: aside;
-    background: #ccc;
-    color: #333;
-    right: 0;
-    bottom: 0;
-    border-radius: 1rem;
-    border-left: 10px solid #04273c;
-    box-shadow: 3px 10px 10px #999;
-  }
-
-  footer#footerPersonajes {
-    grid-area: footer;
-    position: fixed;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 10px 0px 10px 0px;
-    background-color: #04273c;
-    text-align: center;
-    color: #fff;
-  }
-}
 }
