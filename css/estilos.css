@@ -11,6 +11,52 @@ body {
   font-family: helvetica;
 }
 
+.footerIndex,
+.footerPeliculas,
+.footerContacto {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0px 10px 0px;
+  background-color: #04273c;
+  text-align: center;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.imagenIndex {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin: 0;
+  z-index: 0;
+}
+.imagenIndex img {
+  width: 100%;
+}
+  /*Titulo*/
+  .tituloPagina {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  .tituloPaginaPersonajes {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+  }
 
 /*Patalla de tablets*/
 @media screen and (min-width: 576px) {
@@ -65,24 +111,6 @@ body {
     right: 0;
     bottom: 0;
     width: 14%;
-  }
-
-  .footerIndex,
-  .footerPeliculas,
-  .footerContacto {
-    position: fixed;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 10px 0px 10px 0px;
-    background-color: #04273c;
-    text-align: center;
-    color: #fff;
-  }
-  footer a {
-    color: #fff;
-    text-decoration: none;
   }
 
   h1 {
@@ -172,15 +200,6 @@ body {
     font-weight: bold;
   }
 
-  .imagenIndex {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    margin: 0;
-    z-index: 0;
-  }
-
   /*Titulo*/
   .tituloPagina {
     position: absolute;
@@ -199,9 +218,6 @@ body {
     font-weight: bolder;
   }
 
-  .imagenIndex img {
-    width: 100%;
-  }
 
   #cabecera {
     display: flex;
@@ -362,24 +378,6 @@ body {
     width: 14%;
   }
 
-  .footerIndex,
-  .footerPeliculas,
-  .footerContacto {
-    position: fixed;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 10px 0px 10px 0px;
-    background-color: #04273c;
-    text-align: center;
-    color: #fff;
-  }
-  footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-
   h1 {
     color: #04273c;
   }
@@ -467,14 +465,7 @@ body {
     font-weight: bold;
   }
 
-  .imagenIndex {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    margin: 0;
-    z-index: 0;
-  }
+
 
   /*Titulo*/
   .tituloPagina {
