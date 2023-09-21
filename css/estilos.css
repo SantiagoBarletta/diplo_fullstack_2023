@@ -215,7 +215,20 @@ input[type="submit"] {
 legend {
   margin: 10px;
 }
-
+.cat{
+  display: block;
+  font-weight: 700;
+  color: #04273C;
+}
+.dto{
+  font-style: italic;
+  line-height: 3rem;
+}
+.datos{
+  height: 100%;
+  width: 300px;
+}
+/*aside*/
 .recomendaciones {
   background: #ccc;
   width: 100%;
@@ -351,6 +364,7 @@ legend {
   .contenidoIndex,
   .contenidoContato {
     width: 82%;
+    justify-content: center;
   }
 
   .recomendaciones {
