@@ -10,7 +10,6 @@ body {
   font-size: 15px;
   font-family: helvetica;
 }
-
 .footerIndex,
 .footerPeliculas,
 .footerContacto {
@@ -28,37 +27,124 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
-
-.imagenIndex {
+.imagenIndex,
+#imagenPersonajes {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 200px;
   overflow: hidden;
   margin: 0;
   z-index: 0;
 }
+.imagenIndex img,
+#imagenPersonajes img {
+  width: 100%;
+}
+/*Titulo*/
+.tituloPagina {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.tituloPaginaPersonajes {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
 .imagenIndex img {
   width: 100%;
 }
-  /*Titulo*/
-  .tituloPagina {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    color: #fff;
-    font-size: 60px;
-    font-weight: bolder;
-  }
-  .tituloPaginaPersonajes {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    color: #fff;
-    font-size: 60px;
-    font-weight: bolder;
-  }
 
-/*Patalla de tablets*/
+#cabecera {
+  display: flex;
+}
+
+h1 {
+  color: #04273c;
+}
+
+h1,
+h2,
+h3 {
+  padding: 1rem;
+}
+
+.pelicula {
+  display: inline-block;
+  width: 95%;
+  height: 100%;
+  border-radius: 1rem;
+  border-left: 10px solid #04273c;
+  box-shadow: 3px 10px 10px #999;
+  margin: 0.2rem;
+}
+.personaje {
+  display: inline-block;
+  width: 95%;
+  border-radius: 1rem;
+  border-left: 10px solid #04273c;
+  box-shadow: 3px 10px 10px #999;
+  margin: 0.2rem;
+}
+.poster {
+  width: 40%;
+  padding: 1rem;
+  float: left;
+}
+
+.bioImg {
+  max-width: 40%;
+  overflow: hidden;
+  padding: 1rem;
+  float: left;
+}
+
+.sinopsis {
+  display: inline;
+  float: right;
+  width: 60%;
+  padding: 1rem;
+}
+iframe {
+  width: 100%;
+  height: 80%;
+  padding: 1rem;
+}
+
+.tituloPelicula {
+  background-color: #04273c;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 0 1rem 0 0;
+}
+
+.datosPelicula {
+  display: inline;
+}
+
+.trailer {
+  display: inline-block;
+  width: 100%;
+  height: 50%;
+}
+
+.cabezaTrailer {
+  background-color: #04273c;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+/*------------------------------------------Patalla de tablets---------------------------------------------*/
 @media screen and (min-width: 576px) {
   .navbar,
   .navbarPersonajes {
@@ -79,13 +165,17 @@ footer a {
     color: #333;
     text-decoration: none;
     border-right: 1px dotted #ccc;
-    width: 187px;
+    width: 120px;
     line-height: 70px;
   }
   .navbar ul li a:hover,
   .navbarPersonajes ul li a:hover {
     background-color: #0e4791;
     color: #ccc;
+  }
+
+  .imagenIndex {
+    height: 400px;
   }
   section,
   aside {
@@ -98,8 +188,9 @@ footer a {
   .contenidoContato {
     border: 1px solid #ccc;
     margin-bottom: 50px;
+    margin-left: 2px;
     float: left;
-    width: 85%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -110,69 +201,8 @@ footer a {
     color: #333;
     right: 0;
     bottom: 0;
-    width: 14%;
+    width: 28%;
   }
-
-  h1 {
-    color: #04273c;
-  }
-
-  h1,
-  h2,
-  h3 {
-    padding: 1rem;
-  }
-  .pelicula {
-    display: inline-block;
-    width: 420px;
-    height: 600px;
-    border-radius: 1rem;
-    border-left: 10px solid #04273c;
-    box-shadow: 3px 10px 10px #999;
-    margin: 0.2rem;
-  }
-  .personaje {
-    display: inline-block;
-    width: 420px;
-    border-radius: 1rem;
-    border-left: 10px solid #04273c;
-    box-shadow: 3px 10px 10px #999;
-    margin: 0.2rem;
-  }
-  .poster {
-    width: 40%;
-    padding: 1rem;
-    float: left;
-  }
-
-  .bioImg {
-    max-width: 40%;
-    overflow: hidden;
-    padding: 1rem;
-    float: left;
-  }
-
-  .sinopsis {
-    display: inline;
-    float: right;
-    width: 60%;
-    padding: 1rem;
-  }
-  iframe {
-    width: 100%;
-    height: 80%;
-    padding: 1rem;
-  }
-
-  .tituloPelicula {
-    background-color: #04273c;
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 0 1rem 0 0;
-  }
-
   .recomendaciones {
     display: inline-block;
     border-radius: 1rem;
@@ -182,47 +212,22 @@ footer a {
   .recomendaciones li {
     margin-left: 10px;
   }
-  .datosPelicula {
-    display: inline;
-  }
-
-  .trailer {
-    display: inline-block;
-    width: 100%;
-    height: 50%;
-  }
-
-  .cabezaTrailer {
-    background-color: #04273c;
-    color: #fff;
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-  }
 
   /*Titulo*/
   .tituloPagina {
-    position: absolute;
     top: 50%;
-    left: 30%;
-    color: #fff;
     font-size: 60px;
     font-weight: bolder;
   }
   .tituloPaginaPersonajes {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    color: #fff;
+    top: 40%;
     font-size: 60px;
     font-weight: bolder;
   }
 
-
-  #cabecera {
-    display: flex;
+  .pelicula {
+    height: 750px;   
   }
-
   /*FORMULARIO*/
   .formulario {
     font-size: 1rem;
@@ -323,176 +328,40 @@ footer a {
     color: #fff;
   }
 }
-/* Pantallas de escritorio*/
+/* --------------------------------Pantallas de escritorio------------------------------------------------------*/
 @media screen and (min-width: 992px) {
-  .navbar,
-  .navbarPersonajes {
-    width: 100%;
-    height: 70px;
-    text-align: center;
-  }
-  .navbar ul,
-  .navbarPersonajes ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-  }
-
   .navbar ul li a,
   .navbarPersonajes ul li a {
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    border-right: 1px dotted #ccc;
     width: 187px;
-    line-height: 70px;
-  }
-  .navbar ul li a:hover,
-  .navbarPersonajes ul li a:hover {
-    background-color: #0e4791;
-    color: #ccc;
-  }
-  section,
-  aside {
-    margin-right: 5px;
-    margin-top: 5px;
-    padding: 10px;
   }
   .contenidoPeliculas,
   .contenidoIndex,
   .contenidoContato {
-    border: 1px solid #ccc;
-    margin-bottom: 50px;
-    float: left;
-    width: 85%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 82%;
   }
   .recomendaciones {
-    position: inherit;
-    float: right;
-    background: #ccc;
-    color: #333;
-    right: 0;
-    bottom: 0;
-    width: 14%;
-  }
-
-  h1 {
-    color: #04273c;
-  }
-
-  h1,
-  h2,
-  h3 {
-    padding: 1rem;
+       width: 17%;
   }
   .pelicula {
-    display: inline-block;
-    width: 420px;
+    max-width: 375px;
     height: 600px;
-    border-radius: 1rem;
-    border-left: 10px solid #04273c;
-    box-shadow: 3px 10px 10px #999;
-    margin: 0.2rem;
-  }
-  .personaje {
-    display: inline-block;
-    width: 420px;
-    border-radius: 1rem;
-    border-left: 10px solid #04273c;
-    box-shadow: 3px 10px 10px #999;
-    margin: 0.2rem;
-  }
-  .poster {
-    width: 40%;
-    padding: 1rem;
-    float: left;
-  }
-
-  .bioImg {
-    max-width: 40%;
-    overflow: hidden;
-    padding: 1rem;
-    float: left;
-  }
-
-  .sinopsis {
-    display: inline;
-    float: right;
-    width: 60%;
-    padding: 1rem;
-  }
-  iframe {
-    width: 100%;
-    height: 80%;
-    padding: 1rem;
-  }
-
-  .tituloPelicula {
-    background-color: #04273c;
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 0 1rem 0 0;
-  }
-
-  .recomendaciones {
-    display: inline-block;
-    border-radius: 1rem;
-    border-left: 10px solid #04273c;
-    box-shadow: 3px 10px 10px #999;
   }
   .recomendaciones li {
     margin-left: 10px;
   }
-  .datosPelicula {
-    display: inline;
+  .tituloPelicula {
+    height: 80px;
   }
-
-  .trailer {
-    display: inline-block;
-    width: 100%;
-    height: 50%;
-  }
-
-  .cabezaTrailer {
-    background-color: #04273c;
-    color: #fff;
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-
-
   /*Titulo*/
-  .tituloPagina {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    color: #fff;
-    font-size: 60px;
-    font-weight: bolder;
-  }
+
   .tituloPaginaPersonajes {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    color: #fff;
-    font-size: 60px;
-    font-weight: bolder;
+    top: 50%;
   }
-
-  .imagenIndex img {
-    width: 100%;
+  .personaje {
+    max-width: 375px;
+    height: 350px;
   }
-
-  #cabecera {
-    display: flex;
-  }
-
+  
   /*FORMULARIO*/
   .formulario {
     font-size: 1rem;
@@ -531,13 +400,6 @@ footer a {
   legend {
     margin: 10px;
   }
-  /*Menu*/
-  .navbar {
-    position: fixed;
-    background-color: #fff;
-    z-index: 1;
-  }
-
   /*GRID*/
   #grid {
     display: grid;
@@ -592,4 +454,5 @@ footer a {
     text-align: center;
     color: #fff;
   }
+}
 }
