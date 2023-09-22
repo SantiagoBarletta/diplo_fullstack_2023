@@ -25,7 +25,6 @@ body {
   list-style-type: none;
   justify-content: center;
 }
-
 .navbar ul li a,
 .navbarPersonajes ul li a {
   display: inline-block;
@@ -40,7 +39,6 @@ body {
   background-color: #0e4791;
   color: #ccc;
 }
-
 .footerIndex,
 .footerPeliculas,
 .footerContacto {
@@ -88,25 +86,20 @@ footer a {
   font-size: 40px;
   font-weight: bolder;
 }
-
 .imagenIndex img {
   width: 100%;
 }
-
 #cabecera {
   display: flex;
 }
-
 h1 {
   color: #04273c;
 }
-
 h1,
 h2,
 h3 {
   padding: 1rem;
 }
-
 .pelicula {
   display: inline-block;
   width: 95%;
@@ -129,14 +122,12 @@ h3 {
   padding: 1rem;
   float: left;
 }
-
 .bioImg {
   max-width: 40%;
   overflow: hidden;
   padding: 1rem;
   float: left;
 }
-
 .sinopsis {
   display: inline;
   float: right;
@@ -148,7 +139,6 @@ iframe {
   height: 80%;
   padding: 1rem;
 }
-
 .tituloPelicula {
   background-color: #04273c;
   color: #fff;
@@ -157,17 +147,14 @@ iframe {
   font-weight: bold;
   border-radius: 0 1rem 0 0;
 }
-
 .datosPelicula {
   display: inline;
 }
-
 .trailer {
   display: inline-block;
   width: 100%;
   height: 50%;
 }
-
 .cabezaTrailer {
   background-color: #04273c;
   color: #fff;
@@ -180,7 +167,6 @@ iframe {
   font-size: 1rem;
   margin-top: 10px;
 }
-
 fieldset {
   padding: 10px;
 }
@@ -195,14 +181,12 @@ select label {
   border-radius: 8px;
   max-width: 200px;
 }
-
 input:invalid {
   box-shadow: 0 0 5px red;
 }
 input:focus {
   box-shadow: none;
 }
-
 input[type="submit"] {
   font-size: 1rem;
   padding: 5px;
@@ -234,8 +218,6 @@ legend {
   width: 100%;
   margin-bottom: 50px;
   padding-bottom: 10px;
-}
-.recomendaciones {
   display: inline-block;
   border-radius: 1rem;
   border-left: 10px solid #04273c;
@@ -279,11 +261,9 @@ legend {
   .recomendaciones {
        width: 28%;
   }
-  
   .recomendaciones li {
     margin-left: 10px;
   }
-
   /*Titulo*/
   .tituloPagina {
     top: 50%;
@@ -310,12 +290,10 @@ legend {
 
     grid-template-rows: 70px 400px 3fr;
   }
-
   header#cabeceraPersonajes {
     grid-area: header;
     position: sticky;
   }
-
   div#imagenPersonajes {
     grid-area: imagen;
     width: 100%;
@@ -324,12 +302,10 @@ legend {
     margin: 0;
     z-index: 0;
   }
-
   section#contenidoPersonajes {
     grid-area: contenido;
     margin-bottom: 50px;
   }
-
   aside#asidePersonajes {
     grid-area: aside;
     background: #ccc;
@@ -340,7 +316,6 @@ legend {
     border-left: 10px solid #04273c;
     box-shadow: 3px 10px 10px #999;
   }
-
   footer#footerPersonajes {
     grid-area: footer;
     position: fixed;
@@ -354,6 +329,7 @@ legend {
     color: #fff;
   }
 }
+
 /* --------------------------------Pantallas de escritorio------------------------------------------------------*/
 @media screen and (min-width: 992px) {
   .navbar ul li a,
@@ -366,9 +342,9 @@ legend {
     width: 82%;
     justify-content: center;
   }
-
   .recomendaciones {
        width: 17%;
+       margin-left: 5px;
   }
   .pelicula {
     max-width: 375px;
