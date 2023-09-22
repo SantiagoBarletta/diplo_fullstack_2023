@@ -11,6 +11,10 @@ body {
   font-size: 15px;
   font-family: helvetica;
 }
+h2{
+  font-size: 18px;
+  font-weight: 700;
+}
 .navbar,
 .navbarPersonajes {
   width: 100%;
@@ -343,9 +347,10 @@ legend {
     justify-content: center;
   }
   .recomendaciones {
-       width: 17%;
+       width: 16%;
        margin-left: 5px;
   }
+ 
   .pelicula {
     max-width: 375px;
     height: 600px;
