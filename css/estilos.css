@@ -16,12 +16,14 @@ h2{
   font-weight: 700;
 }
 .navbar,
+.navbarContacto,
 .navbarPersonajes {
   width: 100%;
   height: 100px;
   text-align: center;
 }
 .navbar ul,
+.navbarContacto ul,
 .navbarPersonajes ul {
   display: flex;
   flex-direction: row;
@@ -30,6 +32,7 @@ h2{
   justify-content: center;
 }
 .navbar ul li a,
+.navbarContacto ul li a,
 .navbarPersonajes ul li a {
   display: inline-block;
   color: #333;
@@ -39,6 +42,7 @@ h2{
   line-height: 50px;
 }
 .navbar ul li a:hover,
+.navbarContacto ul li a:hover,
 .navbarPersonajes ul li a:hover {
   background-color: #0e4791;
   color: #ccc;
@@ -258,12 +262,14 @@ legend {
 /*------------------------------------------Patalla de tablets---------------------------------------------*/
 @media screen and (min-width: 576px) {
   .navbar,
+  .navbarContacto,
   .navbarPersonajes {
     height: 70px;
   }
   .navbar ul li a,
+  .navbarContacto ul li a,
   .navbarPersonajes ul li a {
-    width: 120px;
+    width: 110px;
     line-height: 70px;
   }
   .imagenIndex {
@@ -359,8 +365,9 @@ legend {
 }
 
 /* --------------------------------Pantallas de escritorio------------------------------------------------------*/
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar ul li a,
+  .navbarContacto ul li a,
   .navbarPersonajes ul li a {
     width: 187px;
   }
