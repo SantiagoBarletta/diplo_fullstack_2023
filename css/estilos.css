@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 /* MOBILE FIRST*/
 
 body {
@@ -10,6 +12,7 @@ body {
   margin: 0px auto;
   font-size: 15px;
   font-family: helvetica;
+  overflow-y:scroll;
 }
 h2{
   font-size: 18px;
