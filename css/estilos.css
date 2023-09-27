@@ -16,6 +16,7 @@ body {
   font-family: helvetica;
   overflow-y:scroll;
 }
+
 h2{
   font-size: 18px;
   font-weight: 700;
@@ -300,6 +301,11 @@ legend {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .contenidoIndex {
+    display:inline-block;
+  }
+
   .recomendaciones {
        width: 28%;
   }
@@ -330,7 +336,7 @@ legend {
       "contenido aside aside"
       "footer footer footer";
 
-    grid-template-rows: 70px 400px 3fr;
+    grid-template-rows: 70px 32rem 3fr;
   }
   header#cabeceraPersonajes {
     grid-area: header;
@@ -339,7 +345,7 @@ legend {
   div#imagenPersonajes {
     grid-area: imagen;
     width: 100%;
-    height: 400px;
+    height: 32rem;
     overflow: hidden;
     margin: 0;
     z-index: 0;
@@ -350,6 +356,7 @@ legend {
   }
   aside#asidePersonajes {
     grid-area: aside;
+    height: 150px;
     background: #ccc;
     color: #333;
     right: 0;
@@ -409,4 +416,14 @@ legend {
     max-width: 375px;
     height: 350px;
   }
+}
+
+/* correccion boostrap */
+
+.container-fluid{
+  --bs-gutter-x:0;
+}
+
+ol, ul{
+  padding-left: 0;
 }
