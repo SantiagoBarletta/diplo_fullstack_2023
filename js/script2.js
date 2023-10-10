@@ -114,3 +114,12 @@ console.log(color);
 
 //////////////////CONSIGNA 4 ///////////////////////////////
 
+let numeroSuerte = parseInt (prompt ("Ingrese un número"));
+
+  if (numeroSuerte != 15 && numeroSuerte >= 1 && numeroSuerte){
+    respuestaSuerte = ('ingreso un número de la suerte!');
+  }
+  else{
+    respuestaSuerte = ('ese número no es de la suerte');
+  }
+  document.write(respuestaSuerte);
