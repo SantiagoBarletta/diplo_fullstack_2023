@@ -40,7 +40,7 @@ let peliculas = [
 console.log(peliculas.length);
 console.log(peliculas[0]);
 
-////////////////////// Consigna//////////////////////
+////////////////////// Consigna 1 //////////////////////
 
 // let nombrePrompt = prompt ("Ingrese su nombre");
 // let edadPrompt = prompt ("Ingrese su edad");
@@ -69,7 +69,7 @@ switch (fruta) {
 }
 console.log(color);
 
-////////////////////// Consigna//////////////////////
+////////////////////// Consigna 2//////////////////////
 
 // let diaGet = (new Date().getDay());
 // let fechaGet = (new Date().getDate());
@@ -98,16 +98,19 @@ console.log(color);
 // }
 // console.log("hoy es "+ dia + ' ' + fechaGet);
 
-//////////////////CONSIGNA /////////////////////////
+//////////////////CONSIGNA 3 /////////////////////////
 
-let numeroPrompt = parseInt (prompt ("Ingrese un número"));
-if (numeroPrompt == 10 ){
-    respuesta = ('ingresó el número 10');
-}
-else if (numeroPrompt > 10){
-    respuesta = ('ingresó un número mayor a 10');
- }
-else{
-    respuesta = ('ingresó un número menor a 10');
-}
-document.write(respuesta);
+// let numeroPrompt = parseInt (prompt ("Ingrese un número"));
+// if (numeroPrompt == 10 ){
+//     respuesta = ('ingresó el número 10');
+// }
+// else if (numeroPrompt > 10){
+//     respuesta = ('ingresó un número mayor a 10');
+//  }
+// else{
+//     respuesta = ('ingresó un número menor a 10');
+// }
+// document.write(respuesta);
+
+//////////////////CONSIGNA 4 ///////////////////////////////
+
