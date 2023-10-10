@@ -116,10 +116,16 @@ console.log(color);
 
 let numeroSuerte = parseInt(prompt("Ingrese un número"));
 
-if (numeroSuerte != 15 && numeroSuerte >= 1 && numeroSuerte && (numeroSuerte % 3) == 0 || (numeroSuerte % 2) == 0) {
-  respuestaSuerte = ('<b style="color:green">ingresó un número de la suerte!</b>');
-}
-else {
-  respuestaSuerte = ('<b style="color:red">ese número no es de la suerte!</b>');
+if (
+  (numeroSuerte != 15 &&
+    numeroSuerte >= 1 &&
+    numeroSuerte &&
+    numeroSuerte % 3 == 0) ||
+  numeroSuerte % 2 == 0
+) {
+  respuestaSuerte =
+    '<b style="color:green">ingresó un número de la suerte!</b>';
+} else {
+  respuestaSuerte = '<b style="color:red">ese número no es de la suerte!</b>';
 }
 document.write(respuestaSuerte);
