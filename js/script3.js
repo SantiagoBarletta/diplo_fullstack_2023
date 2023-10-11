@@ -8,11 +8,15 @@
 // }
 ////// OTRO WHILE////
 
-let numero = 100;
-while (numero > 0){
-document.write("Sólo quedan: " + numero +" pasos por caminar<br>");
-numero = numero - 1;
-}
+// let numero = 100;
+// while (numero > 0) {
+//   if (numero === 1) {
+//     document.write("Sólo queda: " + numero + " paso por caminar<br>");
+//   } else {
+//     document.write("Sólo quedan: " + numero + " pasos por caminar<br>");
+//   }
+//   numero = numero - 1;
+// }
 
 ////// DO WHILE ///////
 
@@ -21,4 +25,17 @@ numero = numero - 1;
 // i = i +1;
 // }
 // while (i <= 15);
+
+//////////////// FOR //////////////
+
+ //for (let i=0; i < 5; i++)
+ //    document.write(i+"<br>")
+
+
+ /// ejemplo for////
+//  for (let turno = 1; turno <= 5; turno++){
+//     let nombre =prompt ('Ingrese su nombre');
+//     //informa nombre asignado
+//     alert ("Hola "+nombre+" Tu turno es el número "+turno)
+//  }
 
