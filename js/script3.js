@@ -108,7 +108,7 @@ const filtrados = numeros.filter((elemento) => {
 });
 document.write("mayores que 3 con filter " + filtrados + "<br>");
 
-//////////////////// otro filter//////////
+//////////////////// otro filter ///////////////////
 
 let filtro = prompt("Ingrese su busqueda");
 const frutasFiltradas = frutas.filter((fruta) => {
