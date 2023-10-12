@@ -117,3 +117,4 @@ const frutasFiltradas = frutas.filter((fruta) => {
 document.write(
   "Frutas que contienen lo del prompt: " + frutasFiltradas + "<br>"
 );
+
