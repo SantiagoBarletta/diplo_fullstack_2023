@@ -14,10 +14,10 @@ body {
   margin: 0px auto;
   font-size: 15px;
   font-family: helvetica;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
-h2{
+h2 {
   font-size: 18px;
   font-weight: 700;
 }
@@ -78,12 +78,10 @@ footer a {
   overflow: hidden;
   margin: 0;
   z-index: 0;
-  
 }
 .imagenIndex img,
 #imagenPersonajes img {
   width: 100%;
-  
 }
 /*Titulo*/
 .tituloPagina {
@@ -104,7 +102,6 @@ footer a {
 }
 .imagenIndex img {
   width: 100%;
-  
 }
 #cabecera {
   display: flex;
@@ -179,8 +176,8 @@ iframe {
   font-size: 15px;
   font-weight: bold;
 }
- /*FORMULARIO*/
- .formulario {
+/*FORMULARIO*/
+.formulario {
   font-size: 1rem;
   margin-top: 10px;
 }
@@ -216,16 +213,16 @@ input[type="submit"] {
 legend {
   margin: 10px;
 }
-.cat{
+.cat {
   display: block;
   font-weight: 700;
-  color: #04273C;
+  color: #04273c;
 }
-.dto{
+.dto {
   font-style: italic;
   line-height: 3rem;
 }
-.datos{
+.datos {
   height: 100%;
   width: 300px;
 }
@@ -264,10 +261,6 @@ legend {
   color: #555;
 }
 
-
-
-
-
 /*------------------------------------------Patalla de tablets---------------------------------------------*/
 @media screen and (min-width: 576px) {
   .navbar,
@@ -303,11 +296,11 @@ legend {
   }
 
   .contenidoIndex {
-    display:inline-block;
+    display: inline-block;
   }
 
   .recomendaciones {
-       width: 28%;
+    width: 28%;
   }
   .recomendaciones li {
     margin-left: 10px;
@@ -324,7 +317,7 @@ legend {
     font-weight: bolder;
   }
   .pelicula {
-    height: 750px;   
+    height: 750px;
   }
 
   /*GRID*/
@@ -393,10 +386,10 @@ legend {
     justify-content: center;
   }
   .recomendaciones {
-       width: 16%;
-       margin-left: 5px;
+    width: 16%;
+    margin-left: 5px;
   }
- 
+
   .pelicula {
     max-width: 375px;
     height: 600px;
@@ -420,10 +413,19 @@ legend {
 
 /* correccion boostrap */
 
-.container-fluid{
-  --bs-gutter-x:0;
+.container-fluid {
+  --bs-gutter-x: 0;
 }
 
-ol, ul{
+ol,
+ul {
   padding-left: 0;
 }
+
+.oculto {
+  display: none;
+}
+
+/* .claseEjemplo{
+  display: block;
+} */
