@@ -285,6 +285,7 @@ legend {
   }
   .contenidoPeliculas,
   .contenidoIndex,
+  .contenidoIndex2,
   .contenidoContato {
     border: 1px solid #ccc;
     margin-bottom: 50px;
@@ -295,7 +296,8 @@ legend {
     flex-wrap: wrap;
   }
 
-  .contenidoIndex {
+  .contenidoIndex,
+  .contenidoIndex2, {
     display: inline-block;
   }
 
@@ -381,6 +383,7 @@ legend {
   }
   .contenidoPeliculas,
   .contenidoIndex,
+  .contenidoIndex2,
   .contenidoContato {
     width: 82%;
     justify-content: center;
