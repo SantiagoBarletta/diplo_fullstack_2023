@@ -88,7 +88,7 @@ class ProductoClass {
 
 // Instanciar objetos con clase
 
-const producto1 = new ProductoClass (1, "Chocolate", 1500);
+const producto1 = new ProductoClass(1, "Chocolate", 1500);
 console.log(producto1);
 
 producto1.descuento(250);
@@ -97,39 +97,46 @@ console.log(producto1);
 
 ///Recorrer propiedades y valor por propiedades de un objeto //
 
-for (let propiedad in producto1){
-    console.log(propiedad);
-    console.log(producto1[propiedad]);
+for (let propiedad in producto1) {
+  console.log(propiedad);
+  console.log(producto1[propiedad]);
 }
 
 //Otro ejemplo//
 
 class Producto {
-    constructor (nombre, precio){
-        this.nombre = nombre.toUpperCase();
-        this.precio = parseFloat(precio);
-        this.vendido = false;
-    }
-    sumaIva() {
-        this.precio = this.precio *1.21;
-    }
-    vender(){
-        this.vendido = true;
-    }
+  constructor(nombre, precio) {
+    this.nombre = nombre.toUpperCase();
+    this.precio = parseFloat(precio);
+    this.vendido = false;
+  }
+  sumaIva() {
+    this.precio = this.precio * 1.21;
+  }
+  vender() {
+    this.vendido = true;
+  }
 }
 
-const producto2 = new Producto ("arroz", "125");
-const producto3 = new Producto ("fideos", "50");
+const producto2 = new Producto("arroz", "125");
+const producto3 = new Producto("fideos", "50");
 
 producto2.sumaIva();
 producto3.sumaIva();
 producto2.vender();
 
 document.write("<table class='tablajs'><tr><td colspan='6'>Producto despues de aplicar sumaIva y vender:</tr></td>");
-document.write("<tr><td>Nombre producto2: </td><td>"+ producto2.nombre + "</td>");
-document.write("<td>Precio producto2: </td><td>"+ producto2.precio+"</td>");
-document.write("<td>Vendido: </td><td>"+ producto2.vendido +"</td></tr>");
+document.write("<tr><td>Nombre producto2: </td><td>" + producto2.nombre + "</td>");
+document.write("<td>Precio producto2: </td><td>" + producto2.precio + "</td>");
+document.write("<td>Vendido: </td><td>" + producto2.vendido + "</td></tr>");
 
-document.write("<tr><td>Nombre producto3:  </td><td>"+ producto3.nombre+"</td>");
-document.write("<td>Precio producto3: </td><td> "+ producto3.precio+"</td>");
-document.write("<td>Vendido:  </td><td>"+ producto3.vendido+"</td></tr></table>");
+document.write("<tr><td>Nombre producto3:  </td><td>" + producto3.nombre + "</td>");
+document.write("<td>Precio producto3: </td><td> " + producto3.precio + "</td>");
+document.write("<td>Vendido:  </td><td>" + producto3.vendido + "</td></tr></table>");
+
+document.write("<table class='tablajs'><tr></tr>");
+for (let propiedad in producto2) {
+  document.write("<td><b>" + propiedad + "<b></td>");
+  document.write("<td>" + producto2[propiedad] + "</td>");
+}
+document.write("</td></tr></table>");
