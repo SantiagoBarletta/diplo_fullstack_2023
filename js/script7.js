@@ -125,11 +125,11 @@ producto2.sumaIva();
 producto3.sumaIva();
 producto2.vender();
 
-console.log("Producto despues de aplicar sumaIva y vender:");
-console.log("Nombre producto2: "+ producto2.nombre);
-console.log("Precio producto2: "+ producto2.precio);
-console.log("Vendido: "+ producto2.vendido);
+document.write("<table class='tablajs'><tr><td colspan='6'>Producto despues de aplicar sumaIva y vender:</tr></td>");
+document.write("<tr><td>Nombre producto2: </td><td>"+ producto2.nombre + "</td>");
+document.write("<td>Precio producto2: </td><td>"+ producto2.precio+"</td>");
+document.write("<td>Vendido: </td><td>"+ producto2.vendido +"</td></tr>");
 
-console.log("Nombre producto3: "+ producto3.nombre);
-console.log("Precio producto3: "+ producto3.precio);
-console.log("Vendido: "+ producto3.vendido);
+document.write("<tr><td>Nombre producto3:  </td><td>"+ producto3.nombre+"</td>");
+document.write("<td>Precio producto3: </td><td> "+ producto3.precio+"</td>");
+document.write("<td>Vendido:  </td><td>"+ producto3.vendido+"</td></tr></table>");

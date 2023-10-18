@@ -432,3 +432,8 @@ ul {
 /* .claseEjemplo{
   display: block;
 } */
+
+.tablajs,
+.tablajs td{
+  border: #04273c solid;
+}
