@@ -297,7 +297,7 @@ legend {
   }
 
   .contenidoIndex,
-  .contenidoIndex2, {
+  .contenidoIndex2 {
     display: inline-block;
   }
 
@@ -434,6 +434,15 @@ ul {
 } */
 
 .tablajs,
-.tablajs td{
+.tablajs td {
   border: #04273c solid;
+}
+
+#reloj {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  background-color: #0e4791;
+  border-radius: 12px;
+
 }
