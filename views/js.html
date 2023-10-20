@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link href="../css/estilos.css" rel="stylesheet" />
     <title>Introducción HTML</title>
   </head>
@@ -39,16 +40,16 @@
       <h1>Mipulacion del DOM</h1>
       <!-- <select name="" id="select"></select> -->
       <!-- <div id="reloj"> </div> -->
-      <div>
-        <label>Pelicula:</label><br>
-        <input type="text" id="Titulo"></input><br>
-        <label>Ingresa url del poster</label><br>
-        <input type="text" id="Poster"></input><br>
-        <label>Breve sinopsis</label><br>
-        <input type="text" id="Sinopsis"></input><br>
-        <label>Link del Trailer</label><br>
-        <input type="text" id="Trailer"></input><br>
-        <button id="Agregar">Agregar</button>
+      <div class="form-group">
+        <label>Pelicula:</label>
+        <input type="text" id="Titulo"  class="form-control" ></input>
+        <label>Ingresa url del poster</label>
+        <input type="text" id="Poster" class="form-control"></input>
+        <label>Breve sinopsis</label>
+        <textarea id="Sinopsis" class="form-control"></textarea>
+        <label>Link del Trailer</label>
+        <input type="text" id="Trailer" class="form-control"></input>
+        <button id="Agregar" class="btn btn-primary">Agregar</button>
     </div>
     <h2>Listado de Peliculas</h2>
     <div id="divPelis">
