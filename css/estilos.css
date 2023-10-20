@@ -300,7 +300,6 @@ legend {
 
 /*------------------------------------------Patalla de tablets---------------------------------------------*/
 @media screen and (min-width: 576px) {
-
   .navbar,
   .navbarContacto,
   .navbarPersonajes {
@@ -339,95 +338,94 @@ legend {
   }
 
   .contenidoIndex,
-  .contenidoIndex2, {
+  .contenidoIndex2 {
     display: inline-block;
   }
 
-.recomendaciones {
-  width: 28%;
-}
+  .recomendaciones {
+    width: 28%;
+  }
 
-.recomendaciones li {
-  margin-left: 10px;
-}
+  .recomendaciones li {
+    margin-left: 10px;
+  }
 
-/*Titulo*/
-.tituloPagina {
-  top: 50%;
-  font-size: 60px;
-  font-weight: bolder;
-}
+  /*Titulo*/
+  .tituloPagina {
+    top: 50%;
+    font-size: 60px;
+    font-weight: bolder;
+  }
 
-.tituloPaginaPersonajes {
-  top: 40%;
-  font-size: 60px;
-  font-weight: bolder;
-}
+  .tituloPaginaPersonajes {
+    top: 40%;
+    font-size: 60px;
+    font-weight: bolder;
+  }
 
-.pelicula {
-  height: 750px;
-}
+  .pelicula {
+    height: 750px;
+  }
 
-/*GRID*/
-#grid {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "imagen imagen imagen"
-    "contenido aside aside"
-    "footer footer footer";
+  /*GRID*/
+  #grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "imagen imagen imagen"
+      "contenido aside aside"
+      "footer footer footer";
 
-  grid-template-rows: 70px 32rem 3fr;
-}
+    grid-template-rows: 70px 32rem 3fr;
+  }
 
-header#cabeceraPersonajes {
-  grid-area: header;
-  position: sticky;
-}
+  header#cabeceraPersonajes {
+    grid-area: header;
+    position: sticky;
+  }
 
-div#imagenPersonajes {
-  grid-area: imagen;
-  width: 100%;
-  height: 32rem;
-  overflow: hidden;
-  margin: 0;
-  z-index: 0;
-}
+  div#imagenPersonajes {
+    grid-area: imagen;
+    width: 100%;
+    height: 32rem;
+    overflow: hidden;
+    margin: 0;
+    z-index: 0;
+  }
 
-section#contenidoPersonajes {
-  grid-area: contenido;
-  margin-bottom: 50px;
-}
+  section#contenidoPersonajes {
+    grid-area: contenido;
+    margin-bottom: 50px;
+  }
 
-aside#asidePersonajes {
-  grid-area: aside;
-  height: 150px;
-  background: #ccc;
-  color: #333;
-  right: 0;
-  bottom: 0;
-  border-radius: 1rem;
-  border-left: 10px solid #04273c;
-  box-shadow: 3px 10px 10px #999;
-}
+  aside#asidePersonajes {
+    grid-area: aside;
+    height: 150px;
+    background: #ccc;
+    color: #333;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    border-left: 10px solid #04273c;
+    box-shadow: 3px 10px 10px #999;
+  }
 
-footer#footerPersonajes {
-  grid-area: footer;
-  position: fixed;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 10px 0px 10px 0px;
-  background-color: #04273c;
-  text-align: center;
-  color: #fff;
-}
+  footer#footerPersonajes {
+    grid-area: footer;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0px 10px 0px;
+    background-color: #04273c;
+    text-align: center;
+    color: #fff;
+  }
 }
 
 /* --------------------------------Pantallas de escritorio------------------------------------------------------*/
 @media (min-width: 992px) {
-
   .navbar ul li a,
   .navbarContacto ul li a,
   .navbarPersonajes ul li a {
@@ -492,7 +490,7 @@ ul {
 } */
 
 .tablajs,
-.tablajs td{
+.tablajs td {
   border: #04273c solid;
 }
 
@@ -502,5 +500,4 @@ ul {
   color: #fff;
   background-color: #0e4791;
   border-radius: 12px;
-
 }
