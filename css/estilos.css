@@ -327,6 +327,7 @@ legend {
   .contenidoPeliculas,
   .contenidoIndex,
   .contenidoIndex2,
+  .contenidoPersonajes,
   .contenidoContato {
     border: 1px solid #ccc;
     margin-bottom: 50px;
@@ -338,11 +339,13 @@ legend {
   }
 
   .contenidoIndex,
-  .contenidoIndex2 {
+  .contenidoIndex2,
+  .contenidoPersonajes {
     display: inline-block;
   }
 
-  .recomendaciones {
+  .recomendaciones,
+  .personajes-form {
     width: 28%;
   }
 
@@ -435,12 +438,14 @@ legend {
   .contenidoPeliculas,
   .contenidoIndex,
   .contenidoIndex2,
-  .contenidoContato {
+  .contenidoContato,
+  .contenidoPersonajes {
     width: 82%;
     justify-content: center;
   }
 
-  .recomendaciones {
+  .recomendaciones,
+  .personajes-form {
     width: 16%;
     margin-left: 5px;
   }
@@ -466,7 +471,7 @@ legend {
 
   .personaje {
     max-width: 375px;
-    height: 350px;
+    max-height: 350px;
   }
 }
 
@@ -500,4 +505,54 @@ ul {
   color: #fff;
   background-color: #0e4791;
   border-radius: 12px;
+}
+
+
+/* Clases agregar personaje */
+button{
+  font-size: 1rem;
+  padding: 5px;
+  color: #fff;
+  background: #04273c;
+  border-radius: 8px;
+  width: 200px;
+  padding: 10px;
+}
+
+.personajeImg {
+  height: 89.4%;
+  overflow: hidden;
+  
+}
+
+.personajes-form {
+  background: #ccc;
+  width: 30%;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-radius: 1rem;
+  border-left: 10px solid #04273c;
+  box-shadow: 3px 10px 10px #999;
+}
+
+.contenidoPersonajesJS{
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  margin-left: 2px;
+  float: left;
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.personajeJS {
+  display: inline-block;
+  width: 95%;
+  border-radius: 1rem;
+  border-left: 10px solid #04273c;
+  box-shadow: 3px 10px 10px #999;
+  margin: 0.2rem;
+  max-width: 375px;
+  height: 350px;
 }

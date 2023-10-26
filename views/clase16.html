@@ -21,22 +21,27 @@
     </header>
     <!-- Comentario HTML-->
     <div class="imagenIndex">
-      <img src="../images/background.jpg" alt="Imagen de fondo"/>
-      <p class="tituloPagina">PRUEBAS JS</p>
+      <img src="../images/background.jpg" alt="Imagen de fondo" />
+      <p class="tituloPagina">Clase 16: Eventos</p>
     </div>
-    <section class="contenidoIndex">
-      
-      <h1>Mipulacion del DOM</h1>
-    
+    <section class="contenidoPersonajesJS">
+      <h1>Personajes</h1>
+      <div id="personajes-list"></div>
+      <p id="contador-personajes"></p>
     </section>
-    <aside class="recomendaciones">
-      <h2>Recomendados</h2>
-      <ul>
-        <li>Scream</li>
-        <li>Cementerio de Animales</li>
-        <li>Pesadilla en calle elm</li>
-        <li>Halloween</li>
-      </ul>
+    
+    <aside class="personajes-form">
+      <h2>Personajes</h2>
+      <div>
+        <input
+          type="text"
+          id="personajeInput"
+          class="personajeClass"
+          placeholder="Nombre del personaje"
+        />
+
+        <button id="agregar-personaje">Agregar</button>
+      </div>
     </aside>
     <footer class="footerIndex">Desarrollado por Santiago Barletta</footer>
     <script src="../js/scriptclase16.js"></script>
