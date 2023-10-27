@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link href="../css/estilos.css" rel="stylesheet" />
+    <link href="../css/mascota.css" rel="stylesheet"/>
+    <title>Introducción HTML</title>
+  </head>
+  <body>
+    <header id="cabecera" class="encabezado">
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../views/peliculas.html">Peliculas</a></li>
+          <li><a href="../views/personajes.html">Personajes</a></li>
+          <li><a href="../views/contacto.html">Contacto</a></li>
+          <li><a href="../views/nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Comentario HTML-->
+    <div class="imagenIndex">
+      <img src="../images/background.jpg" alt="Imagen de fondo" />
+      <p class="tituloPagina">Clase 17: Eventos</p>
+    </div>
+    <section class="container">
+      <h1>Mascotas</h1>
+      <ul id="listaMascotas" class="list-group"></div>
+      <p id="contador-personajes"></p>
+    </section>
+    
+    <aside class="personajes-form">
+      <h2>Mascotas</h2>
+      <div>
+        <input
+          type="text" id="nuevaMascotas" placeholder="Nombre Mascota"
+        />
+        <button id="agregarMascota">Agregar</button>
+      </div>
+    </aside>
+    <footer class="footerIndex">Desarrollado por Santiago Barletta</footer>
+    <script src="../js/scriptclase17.js"></script>
+  </body>
+</html>

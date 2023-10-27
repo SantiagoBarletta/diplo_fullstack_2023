@@ -34,7 +34,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   // Declaracion del Array
-  const personajes = ["Tarman", "Jason", "thing"];
+  const personajes = ["Tarman", "Jason", "Thing"];
 
   // Funcion para mostrar lista de personajes en el DOM
   const renderPersonajeList = () => {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Agregar nombre
 
       const personajeName = document.createElement("div");
-      personajeName.className="tituloPelicula";
+      personajeName.className = "tituloPelicula";
       personajeName.textContent = personaje;
       listItem.appendChild(personajeName);
 
@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
       personajeImage.className = "personajeImg";
       listItem.appendChild(personajeImage);
 
-
-      
+      const deleteButton = document.createElement("span");
+      deleteButton.className = "delete-personaje";
+      deleteButton.dataset.index = index; // Almacena el índice en un atributo personalizado
+      deleteButton.textContent = "Eliminar";
+      listItem.appendChild(deleteButton);
 
       //Agrega elemento de lista al DOM
       personajeList.appendChild(listItem);
@@ -81,14 +84,39 @@ document.addEventListener("DOMContentLoaded", function () {
       renderPersonajeList();
     }
   };
+  // funcion para elimina un personaje de la lista
+  const deletePersonaje = (index) => {
+    personajes.splice(index, 1); // Elimina el personaje del array
+    renderPersonajeList(); // Vuelve a mostrar la lista actualizada
+  };
+
+  // Agrega controlador de eventos al boton agregar
   const addButton = document.getElementById("agregar-personaje");
-  addButton.addEventListener("click", agregarPersonaje)
+  addButton.addEventListener("click", agregarPersonaje);
 
-  // funcion para actualizar el contador
+  // Evento para el campo entrada (permitir agregar precionando ENTER)
+  const personajeInput = document.getElementById("personajeInput");
+  personajeInput.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      agregarPersonaje();
+    }
+  });
 
-  const updatePersonajeCount =() =>{
+  // // Evento para la lista de personajes (permite eliminar)
+   const personajeList = document.getElementById("personajes-list");
+   personajeList.addEventListener("click", function(event) {
+     if (event.target.classList.contains("delete-personaje")) {
+       const index = event.target.getAttribute("data-index"); //Obtiene el indice almacenado en atributo
+       deletePersonaje(index);
+     }
+   });
+
+
+  // Funcion para actualizar el contador
+
+  const updatePersonajeCount = () => {
     const personajeCount = document.getElementById("contador-personajes");
-    personajeCount.textContent =  `Número de Personajes: ${personajes.length}`;
-  }
+    personajeCount.textContent = `Número de Personajes: ${personajes.length}`;
+  };
   renderPersonajeList();
 });
