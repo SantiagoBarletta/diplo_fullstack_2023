@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link href="../css/estilos.css" rel="stylesheet" />
-    <link href="../css/mascota.css" rel="stylesheet"/>
     <title>Introducción HTML</title>
   </head>
   <body>
@@ -25,18 +24,17 @@
       <img src="../images/background.jpg" alt="Imagen de fondo" />
       <p class="tituloPagina">Clase 17: Eventos</p>
     </div>
-    <section class="container">
+    <section class="contenidoMascotas">
       <h1>Mascotas</h1>
       <ul id="listaMascotas" class="list-group"></div>
       <p id="contador-personajes"></p>
     </section>
     
-    <aside class="personajes-form">
+    <aside class="mascotas-form">
       <h2>Mascotas</h2>
       <div>
-        <input
-          type="text" id="nuevaMascotas" placeholder="Nombre Mascota"
-        />
+        <input type="text" id="nombreMascota" placeholder="Nombre Mascota"/>
+        <input type="text" id="razaMascota" placeholder="Raza Mascota"/>
         <button id="agregarMascota">Agregar</button>
       </div>
     </aside>

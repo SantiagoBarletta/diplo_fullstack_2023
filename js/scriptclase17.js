@@ -1,6 +1,7 @@
 class Mascota {
-    constructor(nombre){
+    constructor(nombre, raza){
         this.nombre = nombre;
+        this.raza = raza;
         this.adoptada = false;
     }
 
@@ -12,14 +13,16 @@ adoptar(){
 //Funcion para agregar una nueva mascota a la lista
 
 function  agregarMascota() {
-    const inputMascota = document.getElementById("nuevaMascotas");
+    const inputMascota = document.getElementById("nombreMascota");
+    const input2Mascota = document.getElementById("razaMascota");
     const nombreMascota = inputMascota.value.trim()  ;
+    const razaMascota = input2Mascota.value.trim();
     
     if (nombreMascota !== ""){
-        const nuevaMascota = new Mascota(nombreMascota);
+        const nuevaMascota = new Mascota(nombreMascota, razaMascota);
         // Crear un elemento de la lista y aplicar estilo segun estado
         const elementoLista = document.createElement("li");
-        elementoLista.textContent = nuevaMascota.nombre;
+        elementoLista.textContent = "Nombre de la Mascota: " + nuevaMascota.nombre + " | Raza: " + nuevaMascota.raza;
 
         if (nuevaMascota.adoptada){
             elementoLista.classList.add("adoptada");
@@ -37,7 +40,8 @@ function  agregarMascota() {
         const listaMascotas = document.getElementById("listaMascotas");
         listaMascotas.appendChild(elementoLista);
         //Limpia campo entrada
-        inputMascota.value ="";
+        inputMascota.value =""
+        input2Mascota.value= "";
     }
 
 }

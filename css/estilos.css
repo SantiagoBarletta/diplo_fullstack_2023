@@ -263,7 +263,8 @@ legend {
 }
 
 /*aside*/
-.recomendaciones {
+.recomendaciones,
+.mascotas-form {
   background: #ccc;
   width: 100%;
   margin-bottom: 50px;
@@ -328,25 +329,27 @@ legend {
   .contenidoIndex,
   .contenidoIndex2,
   .contenidoPersonajes,
-  .contenidoContato {
+  .contenidoContato,
+  .contenidoMascotas {
     border: 1px solid #ccc;
     margin-bottom: 50px;
     margin-left: 2px;
     float: left;
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
   }
 
   .contenidoIndex,
   .contenidoIndex2,
-  .contenidoPersonajes {
+  .contenidoPersonajes,
+  .contenidoMascotas {
     display: inline-block;
   }
 
   .recomendaciones,
   .personajes-form {
-    width: 28%;
+    width: 38%;
   }
 
   .recomendaciones li {
@@ -439,14 +442,16 @@ legend {
   .contenidoIndex,
   .contenidoIndex2,
   .contenidoContato,
-  .contenidoPersonajes {
-    width: 82%;
+  .contenidoPersonajes,
+  .contenidoMascotas {
+    width: 72%;
     justify-content: center;
   }
 
   .recomendaciones,
-  .personajes-form {
-    width: 16%;
+  .personajes-form,
+  .mascotas-form {
+    width: 26%;
     margin-left: 5px;
   }
 
@@ -555,4 +560,8 @@ button{
   margin: 0.2rem;
   max-width: 375px;
   height: 350px;
+}
+.adoptada{
+  color: red;
+  font-weight: 700;
 }
