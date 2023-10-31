@@ -561,7 +561,8 @@ button{
   max-width: 375px;
   height: 350px;
 }
-.adoptada{
+.adoptada::after {
   color: red;
   font-weight: 700;
+  content: " Mascota Adoptada ";
 }
