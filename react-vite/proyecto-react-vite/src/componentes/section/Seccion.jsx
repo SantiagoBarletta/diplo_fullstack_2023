@@ -1,5 +1,5 @@
-import './Seccion.css';
-import galletitas from '../../assets/img/galletitas.jpg';
+import "./Seccion.css";
+import galletitas from "../../assets/img/galletitas.jpg";
 
 function Seccion() {
   return (
@@ -10,8 +10,8 @@ function Seccion() {
         placeat, eos nisi minima dicta at asperiores harum reiciendis aliquam,
         cum voluptatem consequatur quia deleniti in modi odit veniam inventore
         sunt.
-        <img src={galletitas}></img>
       </p>
+      <img src={galletitas}></img>
     </section>
   );
 }

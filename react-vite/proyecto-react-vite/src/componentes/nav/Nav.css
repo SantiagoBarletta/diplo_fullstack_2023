@@ -1,0 +1,27 @@
+ .navbar{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  border-right: 1px dotted #ccc;
+  width: 100px;
+  line-height: 50px;
+}
+
+.navbar ul li a:hover {
+  background-color: #0e4791;
+  color: #ccc;
+} 
