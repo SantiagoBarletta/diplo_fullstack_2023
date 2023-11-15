@@ -3,11 +3,10 @@ import peliculas from './datosPeliculas';
 //CSS
 import './ListaPeliculas.css';
 
-
-
-
 function ListaPeliculas() {
     return (
+      <>
+      <h2>Top 6 de películas</h2>
       <section className="contenidoPeliculas">
         {peliculas.map((pelicula, index) => (
           <Pelicula
@@ -19,7 +18,7 @@ function ListaPeliculas() {
             imagen={pelicula.imagen}
           />
         ))}
-      </section>
+      </section></>
     );
   }
   
