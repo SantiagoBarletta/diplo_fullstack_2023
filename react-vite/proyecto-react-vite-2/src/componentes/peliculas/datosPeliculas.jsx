@@ -11,7 +11,7 @@ const peliculas = [
     nombre: "It",
     anio: 1990,
     sinopsis:
-      "Un pueblo de Maine está siendo aterrorizado por una fuerza malévola oculta tras la máscara de un payaso. Hartos de ver como las víctimas se suceden una tras otra, siete amigos de una pandilla de la infancia deciden unirse para luchar contra el mal.",
+      "Un pueblo de Maine está siendo aterrorizado por una fuerza malévola oculta tras la máscara de un payaso. Hartos de ver como las víctimas se suceden una tras otra, siete amigos de una pandilla de la infancia deciden unirse para luchar.",
     director: "Sean S. Cunningham",
     imagen: "it", // solo el nombre de la imagen sin la extensión
   },
