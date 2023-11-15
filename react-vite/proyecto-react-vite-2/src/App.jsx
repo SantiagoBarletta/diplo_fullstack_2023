@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./componentes/footer/Footer";
 import Header from "./componentes/header/Header";
 import Seccion from "./componentes/section/Seccion";
-import ListaPeliculas from "./componentes/ListaPeliculas";
+import ListaPeliculas from "./componentes/peliculas/ListaPeliculas";
 import Menu from "./componentes/menu/Menu";
 import GestionPociones from "./componentes/GestionPociones";
 import "bootstrap/dist/css/bootstrap.min.css";
