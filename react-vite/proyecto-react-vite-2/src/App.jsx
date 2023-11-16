@@ -5,7 +5,7 @@ import Header from "./componentes/header/Header";
 import Seccion from "./componentes/section/Seccion";
 import ListaPeliculas from "./componentes/peliculas/ListaPeliculas";
 import Menu from "./componentes/menu/Menu";
-import GestionPociones from "./componentes/GestionPociones";
+import GestionPociones from "./componentes/pociones/GestionPociones";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
