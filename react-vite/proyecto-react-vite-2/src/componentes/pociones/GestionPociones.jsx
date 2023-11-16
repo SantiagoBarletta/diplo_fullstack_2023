@@ -31,6 +31,11 @@ const completarPocion = (id) =>{
 }
 
 
+// Eliminar pocion de la lista
+const eliminarPocion = (id) =>{
+    const nuevasPociones = pociones.filter((pocion) => pocion.id !==id);
+    setPociones(nuevasPociones)
+};
 
 //Agregar una nueva pocion a la lista
 const agregarPocion = (nombre) =>{
@@ -45,11 +50,12 @@ const agregarPocion = (nombre) =>{
     return(
         <div>
             <h1> Gestión de peliculas a ver </h1>
+            <FormularioDePociones agregarPocion={agregarPocion} />
             <b><ListaDePociones
             pociones={pociones}
             completarPocion={completarPocion}
+            eliminarPocion={eliminarPocion}
             /></b>
-            <FormularioDePociones agregarPocion={agregarPocion} />
         </div>
     )
 }

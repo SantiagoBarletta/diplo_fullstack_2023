@@ -2,15 +2,15 @@ import Pocion from "./Pocion";
 
 
 
-const ListaDePociones = ({ pociones, completarPocion }) =>{
+const ListaDePociones = ({ pociones, completarPocion, eliminarPocion }) =>{
     return(
-        <div>
-            <h2> Listado de Peliculas </h2>
+        <div className="contenedor-listado">
             {pociones.map((pocion) =>(
                 <Pocion 
-                    key={Pocion.id}
+                    key={pocion.id}
                     pocion={pocion}
                     completarPocion={completarPocion}
+                    eliminarPocion={eliminarPocion}
                 />
 
             ) )}

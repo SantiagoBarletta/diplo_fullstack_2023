@@ -12,14 +12,14 @@ const [nuevaPocion, setNuevaPocion] = useState('');
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-        <input
+        <form onSubmit={handleSubmit} class="input-group mb-3">
+        <input className='class="custom-file-label'
             type="text"
             value={nuevaPocion}
             onChange={(e) => setNuevaPocion(e.target.value)}
-            placeholder="Nueva Poción"
+            placeholder="Nueva Película"
         />
-        <button type="submit">Agregar</button>
+        <button type="submit" className="btn btn-primary btn-sm">Agregar</button>
         </form>
     );
     };
