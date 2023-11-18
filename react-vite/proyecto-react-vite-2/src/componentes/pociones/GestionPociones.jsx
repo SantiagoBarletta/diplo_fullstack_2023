@@ -20,7 +20,6 @@ useEffect (() => {
 }, [pociones])
 
 
-
 //Marcar una poción como completada o no
 const completarPocion = (id) =>{
     const nuevasPociones = pociones.map((pocion) =>
