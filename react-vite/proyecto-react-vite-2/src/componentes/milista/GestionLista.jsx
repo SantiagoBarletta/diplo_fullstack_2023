@@ -50,13 +50,13 @@ const agregarItem = (nombre) =>{
         <div>
             <h1> Gestión de peliculas a ver </h1>
             <FormularioMiLista agregarItem={agregarItem} />
-            <section className="contenidoMiLista">
+            
             <MiLista
             items={items}
             vistoItem={vistoItem}
             eliminarItem={eliminarItem}
             />
-            </section>
+        
         </div>
     )
 }
