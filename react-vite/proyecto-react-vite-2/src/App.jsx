@@ -5,7 +5,7 @@ import Header from "./componentes/header/Header";
 import Seccion from "./componentes/section/Seccion";
 import ListaPeliculas from "./componentes/peliculas/ListaPeliculas";
 import Menu from "./componentes/menu/Menu";
-import GestionPociones from "./componentes/pociones/GestionPociones";
+import GestionLista from "./componentes/milista/GestionLista";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <main>
         <Routes>
           <Route path="/" element={<Seccion />} />
-          <Route path="/pociones" element={<GestionPociones />} />
+          <Route path="/milista" element={<GestionLista />} />
           <Route path="/peliculas" element={<ListaPeliculas />} />
         </Routes>
         </main>

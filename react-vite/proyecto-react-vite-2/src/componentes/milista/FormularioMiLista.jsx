@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-const FormularioDePociones = ({ agregarPocion }) => {
-const [nuevaPocion, setNuevaPocion] = useState('');
+const FormularioMiLista = ({ agregarItem }) => {
+const [nuevoItem, setNuevoItem] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (nuevaPocion.trim() !== '') {
-        agregarPocion(nuevaPocion);
-        setNuevaPocion('');
+        if (nuevoItem.trim() !== '') {
+        agregarItem(nuevoItem);
+        setNuevoItem('');
         }
     };
 
@@ -15,8 +15,8 @@ const [nuevaPocion, setNuevaPocion] = useState('');
         <form onSubmit={handleSubmit} class="input-group mb-3">
         <input className='class="custom-file-label'
             type="text"
-            value={nuevaPocion}
-            onChange={(e) => setNuevaPocion(e.target.value)}
+            value={nuevoItem}
+            onChange={(e) => setNuevoItem(e.target.value)}
             placeholder="Nueva Película"
         />
         <button type="submit" className="btn btn-primary btn-sm">Agregar</button>
@@ -24,4 +24,4 @@ const [nuevaPocion, setNuevaPocion] = useState('');
     );
     };
 
-export default FormularioDePociones;
+export default FormularioMiLista;
