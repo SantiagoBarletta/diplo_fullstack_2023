@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import FormularioMiLista from "./FormularioMiLista"
 import MiLista from "./MiLista";
+import './Milista.css'
 
 const GestionLista = () =>{
 // Estado para almacenar las pociones
@@ -26,7 +27,14 @@ const vistoItem = (id) =>{
     item.id === id ? { ...item, vista: !item.vista }:item
     )
     setItems(nuevosItems);
+}
 
+//Mostrar ocultar sinopsis
+const verSinopsis = (id) =>{
+    const nuevosItems = items.map((item) =>
+    item.id === id ? { ...item, mostrar: !item.mostrar }:item
+    )
+    setItems(nuevosItems);
 }
 
 
@@ -37,24 +45,27 @@ const eliminarItem = (id) =>{
 };
 
 //Agregar una nueva pocion a la lista
-const agregarItem = (nombre) =>{
+const agregarItem = ({ nombre, sinopsis }) => {
     const nuevoItem ={
         id: Date.now(), //generar ID unico
         nombre,
+        sinopsis, 
         vista: false,
+        ver: false
     };
     setItems([...items, nuevoItem])
 };
 
     return(
         <div>
-            <h1> Gestión de peliculas a ver </h1>
+            <h2> Mi Lista </h2>
             <FormularioMiLista agregarItem={agregarItem} />
             
             <MiLista
             items={items}
             vistoItem={vistoItem}
             eliminarItem={eliminarItem}
+            verSinopsis={verSinopsis}
             />
         
         </div>
