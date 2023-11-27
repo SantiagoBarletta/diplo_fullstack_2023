@@ -15,7 +15,9 @@
   overflow-y: scroll;
 
 }
-
+.vite{
+  fill: var(--white);
+}
 a {
   font-weight: 500;
   color: #646cff;
