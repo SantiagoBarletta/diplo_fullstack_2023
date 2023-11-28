@@ -5,10 +5,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: homizio;
+    font-family: 'Proxima Nova Lt';
 }
 
-                
+      
 header{
     height: 100px;
     display: flex;
@@ -23,7 +23,7 @@ header{
     padding: 8px 10px 12px;
     display: flex;
     flex-direction: column;
-    width: calc(100% - 30px);
+    width: calc(100% - 700px);
 }
 
 .navsup{
@@ -36,12 +36,15 @@ header{
     justify-content: space-between;
 }
 
+.logo{
+    width: 162px;
+    margin-right: 40px;
+}
 .mllogo{
     width: 134px;
 }
 
 input{
-    color: #333;
     font-size: 16px;
     margin: 0;
     border-radius: 2px;
@@ -55,7 +58,10 @@ input{
     border-color: rgba(0,0,0,0);
     border-width: 1.5px;
 }
-
+input::placeholder{
+    color: #d8d8d8;
+    
+}
 .nav-search{
     max-width: 720px;
     display: flex;
@@ -79,4 +85,32 @@ input{
 .promo img{
     max-width: 340px;
     max-height: 39px;
+    margin-left: 80px;
 }
+/*Sección enviar*/
+.envio{
+    display: flex;
+}
+.enviar{
+    font-size: 12px;
+    color: #999;
+}
+
+.enviar p{
+    font-size: 14px;
+    color: black;
+}
+
+.bi-geo-alt{
+    font-size: 24px;
+    color: #999;
+    margin: 0 5px;
+}
+
+/*Menú del Centro*/
+.menu-central{
+    display: flex;
+    list-style: none;
+}
+
+.menu-central li{}
