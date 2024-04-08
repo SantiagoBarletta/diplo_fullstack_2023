@@ -140,3 +140,4 @@ for (let propiedad in producto2) {
   document.write("<td>" + producto2[propiedad] + "</td>");
 }
 document.write("</td></tr></table>");
+
